@@ -1,4 +1,5 @@
 import React from 'react';
+import '../hoja-estilos/Boton.css'
 
 function Boton({texto, esBotonClic, manejarClic}){    //recibimos 3 props
   return (
