@@ -1,24 +1,26 @@
 import './App.css';
 import Boton from './componentes/Boton';
-import Contador from './componentes/Contador'
+import Contador from './componentes/Contador';
+import { useState } from 'react';
 
 function App() {
+  const [numClics, setNumClics] = useState(0)
 
   const manejarClic =()=> {
-    console.log("clic")
+    setNumClics(numClics + 1)
   }
 
   const reiniciarContador =()=>{
-    console.log("reiniciar");
+    setNumClics(0);
   }
 
   return (
     <div className='App'>
       <div className='title'>
-        <h2>Mi primer App con React</h2> 
+        <h2>Contador de clics</h2> 
         </div>  
       <div className='contenedor-contador'>
-        <Contador numClics='5'/>
+        <Contador numClics={numClics}/>
         <Boton
         texto='Clic'
         esBotonClic={true}
