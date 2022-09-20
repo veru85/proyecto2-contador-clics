@@ -15,7 +15,7 @@ function App() {
     <div className='App'>
       <div className='title'>
         <h2>Mi primer App con React</h2> 
-        </div>  <br></br>
+        </div>  
       <div className='contenedor-contador'>
         <Boton
         texto='Clic'
