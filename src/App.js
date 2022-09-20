@@ -1,5 +1,6 @@
 import './App.css';
 import Boton from './componentes/Boton';
+import Contador from './componentes/Contador'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <h2>Mi primer App con React</h2> 
         </div>  
       <div className='contenedor-contador'>
+        <Contador numClics='5'/>
         <Boton
         texto='Clic'
         esBotonClic={true}
